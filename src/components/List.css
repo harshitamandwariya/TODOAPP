@@ -1,0 +1,35 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td {
+    text-align: left;
+    padding: 8px;
+    border: 1;
+    width: 25%;
+  }
+  
+  tr:nth-child(even) {background-color: #f2f2f2;}
+  tr:hover {background-color:#a56868;}
+  td:hover {background-color:#f2f2f2;}
+  
+  td#data{
+      text-transform: capitalize;
+  }
+  i{
+      align-self: auto;
+      margin: 0 40px;
+  }
+  
+  #textData[type=text]{
+    box-sizing: border-box;
+    border: 2px solid red;
+    border-radius: 4px;
+    background-color: #3CBC8D;
+    color: black;
+  }
+  
+  input[type=text]:focus {
+    border: 3px solid #555;
+  }
