@@ -1,24 +1,29 @@
+export const AddTask = (task) => {
+    
+    
+    return {
+        type : 'ADDTASK',
+        payload : task
+    }
+}
 
-export const addList = term => {
+export const DeleteTask = (index) => {
+    
+    
     return {
-      type: "ADD_TODO",
-      payload: term
-    };
-  };
-  
-  export const removeList = id => {
+        type : 'DELETETASK',
+        payload : index
+    }
+}
+
+export const EditTask = (index,task) => {
+    
+    
     return {
-      type: "DELETE_TODO",
-      payload: id
-    };
-  };
-  
-  export const editList = (term,id) => {
-    return {
-      type: "EDIT_TODO",
-      payload: {
-        term:term,
-        id:id
-      }
-    };
-  };
+        type : 'EDITTASK',
+        payload : {
+            index:index,
+            task:task
+        }
+    }
+}
